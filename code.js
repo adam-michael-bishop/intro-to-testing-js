@@ -32,8 +32,10 @@ function isVowel(char){
 };
 
 function add(a, b){
-    if (typeof parseFloat(a) === "number" && typeof parseFloat(b) === "number"){
+    if (!isNaN(a) && !isNaN(b)){
         return parseFloat(a) + parseFloat(b);
     }
     return NaN;
 }
+
+console.log(add("my", "string"));
