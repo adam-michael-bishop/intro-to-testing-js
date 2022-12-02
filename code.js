@@ -30,3 +30,10 @@ function isVowel(char){
     }
     return false;
 };
+
+function add(a, b){
+    if (typeof parseFloat(a) === "number" && typeof parseFloat(b) === "number"){
+        return parseFloat(a) + parseFloat(b);
+    }
+    return NaN;
+}
