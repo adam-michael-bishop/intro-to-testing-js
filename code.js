@@ -37,5 +37,3 @@ function add(a, b){
     }
     return NaN;
 }
-
-console.log(add("my", "string"));
