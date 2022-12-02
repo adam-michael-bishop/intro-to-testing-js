@@ -17,3 +17,16 @@ function isFive(number){
 function isEven(number){
     return number % 2 === 0;
 }
+
+function isVowel(char){
+    const vowels = ["a", "e", "i", "o", "u"];
+    if (typeof char !== "string"){
+        return false;
+    }
+    for (const vowel of vowels){
+        if (char.toLowerCase() === vowel){
+            return true;
+        }
+    }
+    return false;
+};
